@@ -52,7 +52,8 @@ class Entity(_LuisData,
                       type=json['type'],
                       score=json.get('score', None),
                       start_index=json.get('startIndex', None),
-                      end_index=json.get('endIndex', None))
+                      end_index=json.get('endIndex', None),
+                      resolution=json.get('resolution', None))
 
 
 class LuisResult(_LuisData,
