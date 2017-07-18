@@ -44,7 +44,7 @@ Intent.__new__.__defaults__ = (None, None)
 class Entity(_LuisData,
              collections.namedtuple(
                  '_Entity',
-                 ['entity', 'type', 'score', 'start_index', 'end_index'])):
+                 ['entity', 'type', 'score', 'start_index', 'end_index', 'resolution'])):
     """Represents an entity, as identified by LUIS."""
     @classmethod
     def _from_json(klass, json):
